@@ -1,0 +1,24 @@
+{
+  "name": "rn-media-meta",
+  "version": "0.0.11",
+  "summary": "Get media file metadata in your React Native app, fork from original react-native-media-meta",
+  "license": "MIT",
+  "authors": {
+    "name": "Jhen",
+    "email": "developer@jhen.me"
+  },
+  "homepage": "https://github.com/vforvasile/rn-media-meta/blob/master/README.md",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/vforvasile/rn-media-meta.git",
+    "tag": "0.0.11"
+  },
+  "source_files": "ios/**/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

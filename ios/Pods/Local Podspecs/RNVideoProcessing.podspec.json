@@ -1,0 +1,25 @@
+{
+  "name": "RNVideoProcessing",
+  "version": "1.7.4",
+  "summary": "Native Video processing/editing for React-Native",
+  "license": "MIT",
+  "homepage": "https://github.com/shahen94/react-native-video-processing#readme",
+  "authors": {
+    "name": "Shahen Hovhannisyan",
+    "email": "shahen.hovhannisyan.94@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shahen94/react-native-video-processing.git",
+    "tag": "1.7.4"
+  },
+  "source_files": "ios/**/*.{h,m,swift}",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "9.0"
+  },
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

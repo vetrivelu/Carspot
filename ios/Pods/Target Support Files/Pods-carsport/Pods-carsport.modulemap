@@ -1,0 +1,6 @@
+module Pods_carsport {
+  umbrella header "Pods-carsport-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1 @@
+../../../../../node_modules/rn-media-meta/ios/RNMediaMeta/RNMediaMeta.h

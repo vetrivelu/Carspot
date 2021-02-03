@@ -1,0 +1,1 @@
+../../../../../node_modules/react-native-video-processing/ios/RNVideoProcessing/RNVideoTrimmer/RNVideoTrimmer-Bridging-Header.h

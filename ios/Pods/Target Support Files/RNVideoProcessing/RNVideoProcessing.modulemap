@@ -1,0 +1,6 @@
+module RNVideoProcessing {
+  umbrella header "RNVideoProcessing-umbrella.h"
+
+  export *
+  module * { export * }
+}

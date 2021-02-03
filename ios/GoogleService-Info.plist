@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>168494380313-62teeq7udk6d6kvjd8datldrpqkicn0m.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.168494380313-62teeq7udk6d6kvjd8datldrpqkicn0m</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>168494380313-4tofk9h8ed5gd8r9u6vvrbrd4bgg3q5p.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDPzDJDqjLYqHpRQQNunH0LYEE1NiSc4V8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>168494380313</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.scriptsbundle.carspot</string>
+	<key>PROJECT_ID</key>
+	<string>carspotreactnative</string>
+	<key>STORAGE_BUCKET</key>
+	<string>carspotreactnative.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:168494380313:ios:f8ee0fe8f2b7d50f8c4188</string>
+</dict>
+</plist>
