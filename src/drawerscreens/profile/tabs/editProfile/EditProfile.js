@@ -98,15 +98,18 @@ export default class EditProfile extends Component<Props> {
 
     } 
     else {
-      if (orderStore.profile.data.user_addr_field) {
+      if (orderStore.profile.data.user_addr_field && orderStore.profile.data.user_addr_field !== undefined) {
+        
+
         this.setState({
-          location: orderStore.profile.data.addres.value
+          
+          location: orderStore.profile.data.address.value
         })
       }
 
     }
 
-    if (orderStore.profile.data.is_show_social == true) {
+    if (data.dealer_details_is_show === true && orderStore.profile.data.is_show_social === true) {
       this.setState({
         fb: dealerDetails.social.facebook.value,
         twitter: dealerDetails.social.twitter.value,
@@ -443,14 +446,14 @@ export default class EditProfile extends Component<Props> {
               </TextInput>
 
               {
-                orderStore.profile.data.user_addr_field &&  data.dealer_details_is_show==false ? [
-                  <Text style={styles.headingTextBlack}>{data.addres.key}</Text>
+                orderStore.profile.data.user_addr_field && orderStore.profile.data.user_addr_field != undefined &&  data.dealer_details_is_show==false ? [
+                  <Text style={styles.headingTextBlack}>{data.address.key}</Text>
 
                 ] : []
               }
 
               {
-                orderStore.profile.data.user_addr_field && data.dealer_details_is_show==false ? [
+                orderStore.profile.data.user_addr_field && orderStore.profile.data.user_addr_field != undefined && data.dealer_details_is_show==false ? [
 
                   <TextInput style={styles.TextInput}
                   value={this.state.location}
@@ -461,7 +464,7 @@ export default class EditProfile extends Component<Props> {
                   underlineColorAndroid='transparent'
                   textAlign={Appearences.Rtl.enabled ? 'right' : 'left'}
                   placeholderTextColor={Appearences.Colors.headingGrey}
-                  placeholder={data.addres.placeholder}>
+                  placeholder={data.address.placeholder}>
                 </TextInput>
 
                 ] : []

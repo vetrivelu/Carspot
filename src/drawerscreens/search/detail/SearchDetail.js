@@ -373,14 +373,15 @@ export default class SearchDetail extends Component<Props> {
     this.setState({ showSpinner: true });
 
     let { orderStore } = Store;
-
     // const pa .rams = sortKeys[index];
-
     const param = {
-      sort: sortKeys[index]
+      sort: sortKeys[index],
+      page_number: 1,
     }
+    const newparams = this.props.navigation.state.params.params;
+    let merged = {...newparams, ...param};
     //  console.warn(params);
-    orderStore.innerResponse = await Api.post('ad_post/search', param);
+    orderStore.innerResponse = await Api.post('ad_post/search', merged);
     // console.log('after search results are', JSON.stringify(orderStore.innerResponse))
     const data = orderStore.innerResponse.data;
     const extra = orderStore.innerResponse.extra;

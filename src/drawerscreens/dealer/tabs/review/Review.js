@@ -381,7 +381,7 @@ export default class Review extends Component<Props> {
                       {reviewForm.form.stars_1.field_name}
                     </Text>
                   </View>
-                  <View style={{ flex: 0.3, }}>
+                  <View style={{ flex: 0.3,alignItems:"flex-end"}}>
                     <StarRating
                       disabled={false}
                       maxStars={5}
