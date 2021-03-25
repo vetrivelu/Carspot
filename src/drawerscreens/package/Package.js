@@ -73,7 +73,7 @@ class Package extends Component<Props> {
           Toast.show(item.inApp.message);
         }
         else {
-          await RNIap.buyProduct(item.inApp.message);
+          await RNIap.buyProduct(item.inApp.android);
           await this.checkout(pkgId, pkgType);
         }
       }
