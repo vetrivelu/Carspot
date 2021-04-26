@@ -341,7 +341,7 @@ class PageFour extends Component<Props> {
     let { orderStore } = Store;
     const adId = { ad_id: orderStore.sell.data.ad_id };
     orderStore.postAdObject = Object.assign(orderStore.postAdObject, adId);
-    const isUpdate = { is_update: orderStore.sell.data.ad_id };
+    const isUpdate = { is_update: "" };
     orderStore.postAdObject = Object.assign(orderStore.postAdObject, isUpdate);
     if (this.state.countryId.length != 0) {
       const data = { ad_country: this.state.countryId };
