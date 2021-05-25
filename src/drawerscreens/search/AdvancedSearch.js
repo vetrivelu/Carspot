@@ -1086,7 +1086,7 @@ export default class AdvancedSearch extends Component<Props> {
             textStyle={styles.dorpdownContainerTextStyle}
             defaultValue={valuesArray[0]}
             onSelect={(index, value) => {
-              this.setState({ fromDate: idsArray[index] });
+              this.setState({ fromDate: valuesArray[index] });
             }}
             renderSeparator={() => { return (<View style={styles.dropdownSeperator} />); }}
 
@@ -1126,7 +1126,7 @@ export default class AdvancedSearch extends Component<Props> {
             textStyle={styles.dorpdownContainerTextStyle}
             defaultValue={valuesArraySecond[0]}
             onSelect={(index, value) => {
-              this.setState({ toDate: idsArraySecond[index] });
+              this.setState({ toDate: valuesArraySecond[index] });
             }}
             renderSeparator={() => { return (<View style={styles.dropdownSeperator} />); }}
 
@@ -2091,7 +2091,7 @@ export default class AdvancedSearch extends Component<Props> {
           continue;
         let data = {};
 
-        data[this.state.selectModel[i].fieldTypeName] = this.state.selectModel[i].selectedId;
+        data[this.state.selectModel[i].fieldTypeName] = this.state.selectModel[i].selectedValue;
         param = Object.assign(param, data);
         // catTempData = Object.assign(param,data)
       }
