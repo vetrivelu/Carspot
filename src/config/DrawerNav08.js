@@ -18,6 +18,7 @@ import ShopFilters from '../drawerscreens/shop/filters/ShopFilters';
 import Cart from '../drawerscreens/shop/cart/Cart';
 import Sell from '../drawerscreens/sell/Sell';
 import DetailOfAds from '../drawerscreens/profile/tabs/adDetailTabs/AdDetailTabManager';
+import Language from '../drawerscreens/language/Language'
 
 
 import {
@@ -92,6 +93,10 @@ import SideMenu from './SideMenu';
     Support:{
         screen:Support
     },
+    Language:{
+        screen: Language
+    }
+    
 }
 
 

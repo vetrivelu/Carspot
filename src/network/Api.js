@@ -21,6 +21,12 @@ const host = 'https://carspot-api.scriptsbundle.com/wp-json/carspot/v1';
 const PURCHASE_CODE = '12';
 const CUSTOM_SECURITY = '12';
 
+// const host = 'https://carspot-multivendor.scriptsbundle.com/wp-json/carspot/v1';
+
+// const PURCHASE_CODE = '12345';
+// const CUSTOM_SECURITY = '54321';
+
+
 
 
 
@@ -800,6 +806,11 @@ class Api {
 
 
     options.headers = Api.headers()
+
+
+      // ..... >>>> Getting language key
+      let nxxx = await LocalDb.getItem('language')
+      options.headers['Carspot-Lang-Locale'] = nxxx;
 
     const data = await LocalDb.getUserProfile();
     if (params != null && params.type === 'social') {

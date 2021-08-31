@@ -43,6 +43,8 @@ class orderStore {
     @observable pageOneReload = false;
     @observable screenTitles = {};
     @observable drawerMenu = {};
+    // .....>>>> wpml_settings
+    @observable wpml_settings = {};
    
     // @observable bodyType = 1;
     // @observable featuredListingType = 1;

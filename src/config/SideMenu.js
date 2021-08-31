@@ -14,6 +14,7 @@ import { Avatar } from 'react-native-elements';
 
 import Toast from 'react-native-simple-toast';
 import { observer } from 'mobx-react';
+import Language from '../drawerscreens/language/Language';
 data = ""
 @observer
 class SideMenu extends Component {
@@ -170,6 +171,10 @@ class SideMenu extends Component {
       case "inbox_list":
         this.nav('Inbox', screenTitle.inbox)
         break;
+        // ....>>>> Languague Addition Screen
+        case "language":
+          this.nav('Language',screenTitle.language)
+          break;
       case "sell_your_car":
         if (data != null && data != '') {
           if (orderStore.isSell == true) {
@@ -347,6 +352,8 @@ UNSAFE_componentWillUpdate = ()=>{
         return require('../../res/images/search_drawer.png');
       case "inbox_list":
         return require('../../res/images/inbox.png');
+        case "language":
+          return require('../../res/images/language.png')
       case "sell_your_car":
         return require('../../res/images/deal.png');
       case "comparison_search":

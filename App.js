@@ -27,6 +27,7 @@ import Banner from './src/components/adMob/Banner';
 import { observer } from 'mobx-react';
 
 import Api from './src/network/Api'
+import store from './src/Stores/orderStore';
 import {
   AdMobInterstitial,
 } from 'react-native-admob'
@@ -74,6 +75,21 @@ export default class App extends Component<Props> {
 
     }
 
+    LocalDb.getItem('language').then((value) => {
+      if (value == null) {
+        if(store.wpml_settings!=undefined){
+          
+          LocalDb.setItem('language', "en")
+  
+        }else{
+          LocalDb.setItem('language', store.wpml_settings.wpml_site_no_languages)
+          console.log("helllo",store.wpml_settings.wpml_site_no_languages)
+  
+        }
+      }
+    })
+
+
 
 
 
@@ -85,7 +101,9 @@ export default class App extends Component<Props> {
 
     const response = await Api.get("settings");
     if (response.success) {
+      let { orderStore } = Store;
       this.setState({ move: true, homePage: response.data.home_theme_type })
+      orderStore.wpml_settings=response.data.wpml_settings
 
 
 

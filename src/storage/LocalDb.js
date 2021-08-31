@@ -3,6 +3,33 @@ import Store from '../Stores'
 class LocalDb {
 
 
+    static async  getItem(key) {
+        return new Promise((resolve, reject) => {
+            AsyncStorage.getItem(key, (error, result) => {
+                if (error) {
+                    reject(error)
+                    return
+                }
+                if (result != null)
+                    var response = JSON.parse(result);
+                else
+                    var response = null;
+                resolve(response);
+            })
+        })
+    }
+    static async setItem(key, value) {
+        return new Promise((resolve, reject) => {
+            AsyncStorage.setItem(key, JSON.stringify(value), error => {
+                if (error) {
+                    reject(error);
+                    return
+                }
+                resolve("Saved in DB");
+            })
+        })
+    }
+
     static async saveRememberMe(remember) {
         try {
             await AsyncStorage.setItem('remember', remember);
