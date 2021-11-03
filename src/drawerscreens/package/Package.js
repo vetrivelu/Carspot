@@ -63,17 +63,17 @@ class Package extends Component<Props> {
         }
 
         else {
-          await RNIap.buyProduct(item.inApp.ios);
+          await RNIap.requestSubscription(item.inApp.ios);
           await this.checkout(pkgId, pkgType);
         }
       }
 
-      else {
+      else if(Platform.OS === 'android') {
         if (item.inApp.android.length == 0) {
-          Toast.show(item.inApp.message);
+          await RNIap.requestSubscription(item.inApp.android);
         }
         else {
-          await RNIap.buyProduct(item.inApp.android);
+          await RNIap.requestSubscription(item.inApp.android);
           await this.checkout(pkgId, pkgType);
         }
       }
@@ -97,6 +97,10 @@ class Package extends Component<Props> {
   componentWillMount = async () => {
     let { orderStore } = Store;
     orderStore.settings = await Api.get('packages');
+
+    
+
+  
 
     const response = orderStore.settings;
     //   const staticText = data.static_text;
@@ -176,13 +180,16 @@ class Package extends Component<Props> {
       android: androidSkews
     });
     // console.warn(itemSkus.length + " " + JSON.stringify(itemSkus))
+    // await RNIap.initConnection()
     try {
-      // await RNIap.initConnection();
-      const products = await RNIap.getProducts(itemSkus);
-      //console.warn('product created====>>>', products);
+      //  await RNIap.initConnection();
+      // const products = await RNIap.getProducts(itemSkus);
+      // console.log("skues",itemSkus)
+      // console.warn('product created====>>>', products);
+      // console.log("Hi",products)
     } catch (err) {
-      // Toast.show(err.message); 
-      //console.warn('getProducts ERROR', err); // standardized err.code and err.message available
+       Toast.show(err.message); 
+      console.warn('getProducts ERROR', err); // standardized err.code and err.message available
     }
 
   }

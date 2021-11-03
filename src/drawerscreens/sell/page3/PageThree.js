@@ -10,7 +10,6 @@ import {
   ScrollView,
   Keyboard,
   TouchableWithoutFeedback,
-  KeyboardAvoidingView,
 } from 'react-native';
 import { CheckBox } from 'react-native-elements';
 import Appearences from '../../../config/Appearences';
@@ -610,7 +609,9 @@ export default class PageThree extends Component<Props> {
                     }
                     stateClone[index].value = message;
                     this.setState({ pageThree: stateClone });
-                  }}></TextInput>
+                  }}>
+                    
+                  </TextInput>
               </View>
       </DismissKeyboard>
               

@@ -31,6 +31,8 @@ import RNRestart from 'react-native-restart';
 import SwitchButton from '../components/SwitchButton';
 import { widthPercentageToDP as wp } from '../helper/Responsive'
 
+import SwitchSelector from "react-native-switch-selector";
+
 import firebase from 'react-native-firebase';
 import appleAuth, {
   AppleButton,
@@ -601,9 +603,9 @@ export default class Signup extends Component<Props> {
           ></TextInput>
           <TouchableOpacity
             style={[styles.dropDown, { backgroundColor: 'transparent', paddingStart: 0 }]}
-            onPress={() => { this.dropdownRef.show(); }}
+            // onPress={() => { this.dropdownRef.show(); }}
           >
-            <SwitchButton
+            {/* <SwitchButton
               onValueChange={async (val) => {
                 //  console.warn(this.state.userIds[val]);
                 this.setState({ selectedUserId: this.state.userIds[val] });
@@ -624,7 +626,30 @@ export default class Signup extends Component<Props> {
               btnBackgroundColor={orderStore.color}   // optional: button background color --- default #00bcd4
               fontColor={Appearences.Colors.black}               // optional: text font color --- default #b1b1b1
               activeFontColor={Appearences.Colors.lightGrey}            // optional: active font color --- default #fff
-            />
+            /> */}
+            
+               <SwitchSelector
+                  style={{ width: 180}}
+                  height={40}
+                  options={[
+                  
+                    { label:this.state.userTypes[2], value:2, accessibilityLabel: "switch-two" },
+                    { label: this.state.userTypes[1], value:1 , accessibilityLabel: "switch-one" },
+                  
+                  ]}
+                  initial={1}
+                  selectedColor={Appearences.Colors.lightGrey}
+                  buttonColor={orderStore.color}
+                  textColor={Appearences.Colors.black}
+                  // borderRadius={2}
+                  backgroundColor={Appearences.Colors.lightGrey}
+                  onPress={value => {
+                    // console.log("Hello",value,this.state.userIds[value] )
+                    this.setState({ selectedUserId: this.state.userIds[value] })
+                    this.setState({ activeSwitch:value ,})
+                  
+                  }}
+          />
 
             {this.state.activeSwitch === 1 ? console.log('view1') : console.log('view2')}
             {/* <ModalDropdown 
@@ -652,7 +677,9 @@ export default class Signup extends Component<Props> {
                             }}/> 
 
           */}
+          
           </TouchableOpacity>
+          
 
 
 

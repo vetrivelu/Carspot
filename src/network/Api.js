@@ -29,7 +29,6 @@ const CUSTOM_SECURITY = '12';
 
 
 
-
 class Api {
   static headers() {
     let { orderStore } = Store;

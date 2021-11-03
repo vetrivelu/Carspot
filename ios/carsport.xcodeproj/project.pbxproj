@@ -7,13 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0284FE6C4EA045FB9539B84F /* PoppinsRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BC3B99CA0E0470A8AF328A2 /* PoppinsRegular.ttf */; };
-		0C32EA74D575406EA86293AC /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4DE0A18FE5F47B59F098B23 /* FontAwesome5_Brands.ttf */; };
-		12A59C43B34740228BCC34F6 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECFAA4B5E462423F884EB862 /* AntDesign.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		175C236D295F4398BC68A404 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8443672AC29B4057A631EF88 /* EvilIcons.ttf */; };
 		182CD7A124AE0CED001BEA76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		1837ACDB223F73DB00CB55F0 /* libQBImagePickerController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1837ACDA223F73DB00CB55F0 /* libQBImagePickerController.a */; };
 		186486E62465450900B1F054 /* dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186486E52465450900B1F054 /* dummy.swift */; };
@@ -25,22 +21,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
-		52A658715C224C658B1F83F7 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4492709D95A540C39A512B23 /* Feather.ttf */; };
-		63ECAC3859B640FCBF69700A /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2F06982C0C84688A0FA0650 /* Fontisto.ttf */; };
-		7773615D37D04CCA9EA4D5AE /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21E39489B86C43D381E2391C /* FontAwesome.ttf */; };
-		78FA9587DC9641A886D5191C /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B35C1497F934D59BD0329A0 /* Octicons.ttf */; };
-		7E7283FD267446769A140826 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84E2B4A005B449348757DA20 /* Foundation.ttf */; };
-		8062F946E7B34A4386ED99D7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DFBFF727EC7495BB09F0438 /* MaterialIcons.ttf */; };
-		926CBDECA4344F0FBDBD187C /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF66522DE525488CB133A409 /* MaterialCommunityIcons.ttf */; };
 		A715772421E7115C002A9F22 /* libGoogle-Maps-iOS-Utils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A715772321E7115C002A9F22 /* libGoogle-Maps-iOS-Utils.a */; };
 		A715777621E71553002A9F22 /* libreact-native-google-maps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A715777521E71553002A9F22 /* libreact-native-google-maps.a */; };
 		A71577A621E71564002A9F22 /* libreact-native-maps.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71577A521E71564002A9F22 /* libreact-native-maps.a */; };
-		BE10A15A86074BA187C6310F /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC3FD28EB3A4879ACAF6E48 /* FontAwesome5_Solid.ttf */; };
-		C5803D3DEEA24444867FDE7D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9ADB1BBC915D41A193F0A8A3 /* Zocial.ttf */; };
-		DFC26824FE9A4FA980E43690 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5132DB4C5C34F6C827F3572 /* Entypo.ttf */; };
-		E32059F2DCB34A8280884B4E /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA1259B14C614BE4B10352D8 /* Ionicons.ttf */; };
-		F5B3931435104C0E813CB4C7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 437224DCADD14321A3A2C18F /* SimpleLineIcons.ttf */; };
-		FD996C7B215B48E99E8816E7 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A26FDC4DB2EF406EB2F96773 /* FontAwesome5_Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -353,24 +336,7 @@
 			files = (
 				182CD7A124AE0CED001BEA76 /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				0284FE6C4EA045FB9539B84F /* PoppinsRegular.ttf in Resources */,
 				18B406342330D4920041DE80 /* GoogleService-Info.plist in Resources */,
-				12A59C43B34740228BCC34F6 /* AntDesign.ttf in Resources */,
-				DFC26824FE9A4FA980E43690 /* Entypo.ttf in Resources */,
-				175C236D295F4398BC68A404 /* EvilIcons.ttf in Resources */,
-				52A658715C224C658B1F83F7 /* Feather.ttf in Resources */,
-				7773615D37D04CCA9EA4D5AE /* FontAwesome.ttf in Resources */,
-				0C32EA74D575406EA86293AC /* FontAwesome5_Brands.ttf in Resources */,
-				FD996C7B215B48E99E8816E7 /* FontAwesome5_Regular.ttf in Resources */,
-				BE10A15A86074BA187C6310F /* FontAwesome5_Solid.ttf in Resources */,
-				63ECAC3859B640FCBF69700A /* Fontisto.ttf in Resources */,
-				7E7283FD267446769A140826 /* Foundation.ttf in Resources */,
-				E32059F2DCB34A8280884B4E /* Ionicons.ttf in Resources */,
-				926CBDECA4344F0FBDBD187C /* MaterialCommunityIcons.ttf in Resources */,
-				8062F946E7B34A4386ED99D7 /* MaterialIcons.ttf in Resources */,
-				78FA9587DC9641A886D5191C /* Octicons.ttf in Resources */,
-				F5B3931435104C0E813CB4C7 /* SimpleLineIcons.ttf in Resources */,
-				C5803D3DEEA24444867FDE7D /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,7 +543,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/CarSpot Automotive Classified\"",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -629,7 +595,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/CarSpot Automotive Classified\"",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

@@ -256,12 +256,12 @@ export default class ReviewDetail extends Component<Props> {
 
 
 
-          <View style={{ marginTop: 15 }}>
+          <View style={{ marginTop: 15,padding:wp(3) }}>
 
             <HTML
               html={post.desc}
               imagesInitialDimensions={
-                { height: wp('60'), width: wp('100') }
+                { height: wp('60'), width: wp('94') }
               }
             // stylesheet = {{
 
