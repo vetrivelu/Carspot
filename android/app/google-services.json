@@ -1,28 +1,28 @@
 {
   "project_info": {
-    "project_number": "168494380313",
+    "project_number": "168494380522",
     "project_id": "carspotreactnative",
     "storage_bucket": "carspotreactnative.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:168494380313:android:40060fdad69203468c4188",
+        "mobilesdk_app_id": "1:168494380522:android:40060fdad69203468c4188",
         "android_client_info": {
-          "package_name": "com.scriptsbundle.carspot"
+          "package_name": "com.opulentcarz.carspot"
         }
       },
       "oauth_client": [
         {
-          "client_id": "168494380313-v4fjddr6nj9a465gea9mc7n637cvcjp3.apps.googleusercontent.com",
+          "client_id": "168494380522-v4fjddr6nj9a465gea9mc7n637cvcjp3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.scriptsbundle.carspot",
+            "package_name": "com.opulentcarz.carspot",
             "certificate_hash": "7d494f2bf69c0d98c93b700847e0b0348e87e084"
           }
         },
         {
-          "client_id": "168494380313-j7533q2p386s46srnktvf830cdcb4ujs.apps.googleusercontent.com",
+          "client_id": "168494380522-j7533q2p386s46srnktvf830cdcb4ujs.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
@@ -35,7 +35,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "168494380313-j7533q2p386s46srnktvf830cdcb4ujs.apps.googleusercontent.com",
+              "client_id": "168494380522-j7533q2p386s46srnktvf830cdcb4ujs.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

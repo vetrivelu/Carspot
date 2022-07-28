@@ -34,6 +34,7 @@ render() {
             width:'100%',}}>
              {this.state.showSpinner ? <Loader/> :null}
                         <WebView
+                          androidHardwareAccelerationDisabled={true}
                           useWebKit={true}
                           source={{uri: this.state.url}}
                           javaScriptEnabled={true}

@@ -1,4 +1,4 @@
-package com.scriptsbundle.carspot;
+package com.opulentcarz.carspot;
 import android.content.Intent;
 import com.facebook.react.ReactActivity;
 import com.facebook.react.modules.i18nmanager.I18nUtil;

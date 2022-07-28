@@ -1,24 +1,22 @@
 {
   "name": "RNIap",
-  "version": "2.4.1",
-  "summary": "RNIap",
-  "description": "React 9ative In App Purchase Module.",
+  "version": "6.0.0",
+  "summary": "React Native In App Purchase Module.",
   "homepage": "https://github.com/dooboolab/react-native-iap",
   "license": "MIT",
-  "authors": {
-    "name": "dooboolab"
-  },
+  "authors": "dooboolab",
   "platforms": {
-    "ios": "7.0"
+    "ios": "9.0",
+    "tvos": "9.0"
   },
   "source": {
     "git": "https://github.com/dooboolab/react-native-iap.git",
-    "tag": "master"
+    "tag": "6.0.0"
   },
-  "source_files": "ios/**/*.{h,m}",
+  "source_files": "ios/*.{h,m}",
   "requires_arc": true,
   "dependencies": {
-    "React": [
+    "React-Core": [
 
     ]
   }

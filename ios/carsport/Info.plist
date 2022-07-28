@@ -27,7 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb770185383592145</string>
+				<string>fb770185383592199</string>
 			</array>
 		</dict>
 		<dict>
@@ -37,7 +37,7 @@
 			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.168494380313-62teeq7udk6d6kvjd8datldrpqkicn0m</string>
+				<string>com.googleusercontent.apps.168494380542-62teeq7udk6d6kvjd8datldrpqkicn0m</string>
 			</array>
 		</dict>
 	</array>
@@ -108,6 +108,9 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>

@@ -11,22 +11,9 @@ import axios from 'axios';
 
 export const GoogleApiKey = "AIzaSyAc7OQqmjVUeNkqcvMoEXT8WkrOBlJ9810"
 
-// const host = 'https://www.tomberapic.com/wp-json/carspot/v1';
-
-// const PURCHASE_CODE = '8019933b-4c3a-4748-a81e-c2156f4c016e';
-// const CUSTOM_SECURITY = '8019933b';
-
-const host = 'https://carspot-api.scriptsbundle.com/wp-json/carspot/v1';
-
-const PURCHASE_CODE = '12';
-const CUSTOM_SECURITY = '12';
-
-// const host = 'https://carspot-multivendor.scriptsbundle.com/wp-json/carspot/v1';
-
-// const PURCHASE_CODE = '12345';
-// const CUSTOM_SECURITY = '54321';
-
-
+const host = 'https://opulentcarz.com/wp-json/carspot/v1';
+const PURCHASE_CODE = 'd0b43638-e6cf-4930-9f12-e9b917170323';
+const CUSTOM_SECURITY = 'Digisailor#20*';
 
 
 class Api {
@@ -830,7 +817,7 @@ class Api {
       }
 
     return fetch(url, options).then(resp => {
-      // console.log('Api response is ------------->>>>>>', resp);
+      console.log('Api response is ------------->>>>>>', resp);
 
       let json = resp.json();
 

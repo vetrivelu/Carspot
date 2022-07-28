@@ -1375,6 +1375,7 @@ export default class PageOne extends Component<Props> {
                       {this.state.uploadedVideo != '' && !this.state.uploadingVideo ?
                         <WebView
                           useWebKit={true}
+                          androidHardwareAccelerationDisabled={true}
                           source={{ uri: this.state.uploadedVideo }}
                           style={styles.videoContent}
                           javaScriptEnabled={true}

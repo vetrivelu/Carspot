@@ -1026,6 +1026,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
                 <WebView
                   useWebKit={true}
+                  androidHardwareAccelerationDisabled={true}
                   source={{ html: customStyle + beforAd }}
                   startInLoadingState={true} />
               </View>
@@ -1055,6 +1056,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
               <View style={[styles.panel, { alignItems: 'center', padding: 0 }]}>
                 <WebView
                   useWebKit={true}
+                  androidHardwareAccelerationDisabled={true}
                   source={{ html: customStyle + afterAd }}
                   startInLoadingState={true} />
               </View>
@@ -1126,6 +1128,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
               <View style={[styles.videoContentContainer, { height: 180 }]}>
                 <WebView
                   useWebKit={true}
+                  androidHardwareAccelerationDisabled={true}
                   source={{ uri: 'https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=0&showinfo=0&controls=0' }}
                   style={styles.videoContent}
                   javaScriptEnabled={true}
@@ -1381,6 +1384,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
           <View style={{ width: '100%', height: 'auto' }}>
             <WebView
               useWebKit={true}
+              androidHardwareAccelerationDisabled={true}
               source={{ uri: 'https://www.youtube.com/embed/' + videoId + '?rel=0&autoplay=0&showinfo=0&controls=0' }}
               style={styles.videoContent}
               javaScriptEnabled={true}

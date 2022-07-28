@@ -1,4 +1,4 @@
-package com.scriptsbundle.carspot;
+package com.opulentcarz.carspot;
 
 import android.content.Intent;
 import android.os.Bundle;
